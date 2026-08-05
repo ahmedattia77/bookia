@@ -1,0 +1,17 @@
+{
+    "welcomeText": "Order Your Book Now!",
+    "login": "Login",
+    "register": "Register",
+    "loginHeadTitle": "Welcome back! Glad\nto see you, Again!",
+    "enterEmial": "Enter your email",
+    "enterPassword": "Enter Your Password",
+    "forgetPassword": "Forgot Password",
+    "orLoginWith": "Or Login with",
+    "signInWithGoogle": "Sign In With Google",
+    "dontHaveAccount": "Don't have an account",
+    "registerNow": "Register Now",
+    "userName": "User Name",
+    "Email": "Email",
+    "password": "passord",
+    "confirmPassword": "confirm Password"
+}

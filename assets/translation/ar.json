@@ -1,0 +1,18 @@
+{
+    "welcomeText": "احجز طلبك الان!",
+    "login": "دخول",
+    "register": "أنشاء حساب",
+    "loginHeadTitle": "مرحبا بعودك!\nسعداء لرؤيتك مرة أخري",
+    "enterEmial": "ادخل الاميل",
+    "enterPassword": "ادخل كلمة المرور",
+    "forgetPassword": "نسيت كلمة المرور",
+    "orLoginWith": "سجل الدخول بي",
+    "signInWithGoogle": "تسجيل الدخول بي جوجل",
+    "signInWithApple": "تسجيل الدخول بي ابل",
+    "dontHaveAccount": "ليس لدي حساب ",
+    "registerNow": "سجل الان",
+    "userName": "إسم المستخدم",
+    "Email": "الاميل",
+    "password": "كلمة المرورو",
+    "confirmPassword": "تأكيد كلمة المرور"
+}
