@@ -1,5 +1,7 @@
 import 'package:bookia/common_widgets/custom_button_widget.dart';
 import 'package:bookia/core/app_color.dart';
+import 'package:bookia/core/helper/extentions.dart';
+import 'package:bookia/core/routing/routes.dart';
 import 'package:bookia/features/athu/presentation/widgets/customTextFromField.dart';
 import 'package:bookia/features/athu/presentation/widgets/custom_back_button.dart';
 import 'package:bookia/features/athu/presentation/widgets/social_button_widget.dart';
@@ -94,7 +96,9 @@ class _LoginScreenState extends State<RegisterScreen> {
                 text: LocaleKeys.login.tr(),
                 backgroundColor: AppColors.primary,
                 textColor: AppColors.white,
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamed(Routes.loginScreenRoute);
+                },
               ),
 
               SizedBox(height: 35.h),
@@ -103,7 +107,7 @@ class _LoginScreenState extends State<RegisterScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    LocaleKeys.dontHaveAccount.tr(),
+                    LocaleKeys.haveAccount.tr(),
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       fontSize: 15.sp,
                       fontWeight: FontWeight.w500,
@@ -115,7 +119,7 @@ class _LoginScreenState extends State<RegisterScreen> {
                       // TODO: Navigate to Register Screen
                     },
                     child: Text(
-                      LocaleKeys.registerNow.tr(),
+                      LocaleKeys.login.tr(),
                       style: TextStyle(
                         color: AppColors.primary,
                         fontSize: 15.sp,

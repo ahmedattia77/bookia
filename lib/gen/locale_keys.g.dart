@@ -14,6 +14,7 @@ abstract class LocaleKeys {
   static const signInWithGoogle = 'signInWithGoogle';
   static const signInWithApple = 'signInWithApple';
   static const dontHaveAccount = 'dontHaveAccount';
+  static const haveAccount = 'haveAccount';
   static const registerNow = 'registerNow';
   static const userName = 'userName';
   static const Email = 'Email';

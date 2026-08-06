@@ -1,5 +1,7 @@
 import 'package:bookia/common_widgets/custom_button_widget.dart';
 import 'package:bookia/core/app_color.dart';
+import 'package:bookia/core/helper/extentions.dart';
+import 'package:bookia/core/routing/routes.dart';
 import 'package:bookia/features/athu/presentation/widgets/language_theme_header.dart';
 import 'package:bookia/features/athu/presentation/widgets/welcome_header_widget.dart';
 import 'package:bookia/gen/assets.gen.dart';
@@ -44,7 +46,9 @@ class WelcomeScreen extends StatelessWidget {
                 text: LocaleKeys.login.tr(),
                 backgroundColor: AppColors.primary,
                 textColor: AppColors.white,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, Routes.loginScreenRoute);
+                },
               ),
 
               SizedBox(height: 15.h),
@@ -55,7 +59,9 @@ class WelcomeScreen extends StatelessWidget {
                 borderColor: Theme.of(context).brightness == Brightness.dark
                     ? AppColors.white
                     : AppColors.darkText,
-                onPressed: () {},
+                onPressed: () {
+                  context.pushNamed(Routes.registerScreenRoute);
+                },
               ),
               SizedBox(height: 85.h),
             ],

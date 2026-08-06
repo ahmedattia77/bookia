@@ -1,7 +1,5 @@
-import 'package:bookia/core/theme/app_theme.dart';
+import 'package:bookia/core/routing/app_router.dart';
 import 'package:bookia/core/theme/cubit/theme_cubit.dart';
-import 'package:bookia/features/athu/presentation/pages/login_screen.dart';
-import 'package:bookia/features/athu/presentation/pages/register_screen.dart';
 import 'package:bookia/features/athu/presentation/pages/welcome_screen.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -26,10 +24,12 @@ class MyApp extends StatelessWidget {
                 localizationsDelegates: context.localizationDelegates,
                 supportedLocales: context.supportedLocales,
                 locale: context.locale,
-                // theme: context.read<ThemeCubit>().theme,
-                theme: AppTheme.darkMode,
+                theme: context.read<ThemeCubit>().theme,
+                // theme: AppTheme.darkMode,
                 debugShowCheckedModeBanner: false,
-                home: RegisterScreen(),
+                onGenerateRoute: (settings) =>
+                    AppRouter.onGenerateRoute(settings),
+                home: WelcomeScreen(),
               );
             },
           ),
