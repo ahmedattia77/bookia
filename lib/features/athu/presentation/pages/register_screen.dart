@@ -2,10 +2,8 @@ import 'package:bookia/common_widgets/custom_button_widget.dart';
 import 'package:bookia/core/app_color.dart';
 import 'package:bookia/core/helper/extentions.dart';
 import 'package:bookia/core/routing/routes.dart';
-import 'package:bookia/features/athu/presentation/widgets/customTextFromField.dart';
+import 'package:bookia/features/athu/presentation/widgets/custom_text_from_field.dart';
 import 'package:bookia/features/athu/presentation/widgets/custom_back_button.dart';
-import 'package:bookia/features/athu/presentation/widgets/social_button_widget.dart';
-import 'package:bookia/features/athu/presentation/widgets/social_divider_widget.dart';
 import 'package:bookia/gen/locale_keys.g.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
@@ -116,7 +114,7 @@ class _LoginScreenState extends State<RegisterScreen> {
                   SizedBox(width: 4.w),
                   GestureDetector(
                     onTap: () {
-                      // TODO: Navigate to Register Screen
+                      context.pushNamed(Routes.loginScreenRoute);
                     },
                     child: Text(
                       LocaleKeys.login.tr(),

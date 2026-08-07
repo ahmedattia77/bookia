@@ -71,7 +71,8 @@ class _LanguageAndThemeHeaderState extends State<LanguageAndThemeHeader> {
                     scale: 0.8,
                     child: Switch.adaptive(
                       value:
-                          context.read<ThemeCubit>().theme == AppTheme.darkMode,
+                          context.read<ThemeCubit>().themeData ==
+                          AppTheme.darkMode,
                       activeThumbColor: AppColors.white.withAlpha(100),
                       inactiveThumbColor: Theme.of(context).iconTheme.color,
                       onChanged: (value) {

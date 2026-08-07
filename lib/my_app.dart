@@ -24,8 +24,7 @@ class MyApp extends StatelessWidget {
                 localizationsDelegates: context.localizationDelegates,
                 supportedLocales: context.supportedLocales,
                 locale: context.locale,
-                theme: context.read<ThemeCubit>().theme,
-                // theme: AppTheme.darkMode,
+                theme: context.read<ThemeCubit>().themeData,
                 debugShowCheckedModeBanner: false,
                 onGenerateRoute: (settings) =>
                     AppRouter.onGenerateRoute(settings),
