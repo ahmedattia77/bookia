@@ -1,3 +1,4 @@
+import 'package:bookia/core/app_color.dart';
 import 'package:flutter/material.dart';
 
 class CustomTextFormField extends StatefulWidget {
@@ -5,6 +6,7 @@ class CustomTextFormField extends StatefulWidget {
   final TextInputType textInputType;
   final String textHint;
   final bool isPassword;
+  final String? Function(String?)? validator;
 
   const CustomTextFormField({
     super.key,
@@ -12,6 +14,7 @@ class CustomTextFormField extends StatefulWidget {
     required this.textInputType,
     required this.textHint,
     this.isPassword = false,
+    this.validator,
   });
 
   @override
@@ -30,6 +33,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: widget.validator,
       keyboardType: widget.textInputType,
       controller: widget.controller,
       obscureText: _isObscure,

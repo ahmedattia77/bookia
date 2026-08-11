@@ -31,6 +31,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class AppTheme {
   // LIGHT THEME
   static ThemeData lightMode = ThemeData(
+    textSelectionTheme: const TextSelectionThemeData(
+      cursorColor: AppColors.primary,
+      selectionHandleColor: AppColors.primary,
+    ),
+
     brightness: Brightness.light,
     scaffoldBackgroundColor: Color(0xFFF7F8F9),
     primaryColor: AppColors.primary,
@@ -74,6 +79,11 @@ class AppTheme {
 
   // DARK THEME
   static ThemeData darkMode = ThemeData(
+    textSelectionTheme: const TextSelectionThemeData(
+      cursorColor: AppColors.primary,
+      selectionHandleColor: AppColors.primary,
+    ),
+
     brightness: Brightness.dark,
     scaffoldBackgroundColor: const Color(0xFF121212),
     primaryColor: AppColors.primary,

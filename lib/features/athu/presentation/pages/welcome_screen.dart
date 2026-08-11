@@ -1,4 +1,4 @@
-import 'package:bookia/common_widgets/custom_button_widget.dart';
+import 'package:bookia/core/common_widgets/custom_button_widget.dart';
 import 'package:bookia/core/app_color.dart';
 import 'package:bookia/core/helper/extentions.dart';
 import 'package:bookia/core/routing/routes.dart';
@@ -47,7 +47,7 @@ class WelcomeScreen extends StatelessWidget {
                 backgroundColor: AppColors.primary,
                 textColor: AppColors.white,
                 onPressed: () {
-                  Navigator.pushNamed(context, Routes.loginScreenRoute);
+                  context.pushNamed(Routes.loginScreenRoute);
                 },
               ),
 

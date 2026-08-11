@@ -20,7 +20,20 @@ class LocalStorageService {
     await _preferences.setString(Keys.langKey, langCode);
   }
 
+  static Future<void> saveUserToken({required String userToken}) async {
+    await _preferences.setString(Keys.userTokenKey, userToken);
+  }
+
   static String getSavedLanguage() {
     return _preferences.getString(Keys.langKey) ?? 'en';
+  }
+
+  static getSavedUserToken() {
+    return _preferences.getString(Keys.userTokenKey) ?? '';
+  }
+
+  static bool isUserLoggedIn() {
+    final token = getSavedUserToken();
+    return token != null && token.isNotEmpty;
   }
 }

@@ -14,5 +14,6 @@
     "userName": "User Name",
     "Email": "Email",
     "password": "passord",
-    "confirmPassword": "confirm Password"
+    "confirmPassword": "confirm Password",
+    "loginSuccessfully": "loginSuccessfully"
 }

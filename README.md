@@ -23,3 +23,5 @@ dart run build_runner build --delete-conflicting-outputs
 ```bash
 dart run easy_localization:generate --source-dir ./assets/translation -f keys -o locale_keys.g.dart -O lib/gen
 ```
+
+& "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe" uninstall com.example.bookia

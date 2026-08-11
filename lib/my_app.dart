@@ -7,7 +7,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final String initialRoute;
+  const MyApp({required this.initialRoute, super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +27,9 @@ class MyApp extends StatelessWidget {
                 locale: context.locale,
                 theme: context.read<ThemeCubit>().themeData,
                 debugShowCheckedModeBanner: false,
+                initialRoute: initialRoute,
                 onGenerateRoute: (settings) =>
                     AppRouter.onGenerateRoute(settings),
-                home: WelcomeScreen(),
               );
             },
           ),
