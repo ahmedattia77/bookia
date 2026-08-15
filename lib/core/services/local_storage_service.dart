@@ -28,12 +28,12 @@ class LocalStorageService {
     return _preferences.getString(Keys.langKey) ?? 'en';
   }
 
-  static getSavedUserToken() {
+  static String getSavedUserToken() {
     return _preferences.getString(Keys.userTokenKey) ?? '';
   }
 
   static bool isUserLoggedIn() {
     final token = getSavedUserToken();
-    return token != null && token.isNotEmpty;
+    return token.isNotEmpty;
   }
 }
