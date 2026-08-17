@@ -8,7 +8,10 @@
 
 
 
-https://github.com/user-attachments/assets/0495947b-8293-42bb-87ba-ad06332fa20b
+
+
+https://github.com/user-attachments/assets/cecd576b-33aa-4916-a3f2-06b56f8700d8
+
 
 
 
@@ -26,6 +29,7 @@ https://github.com/user-attachments/assets/0495947b-8293-42bb-87ba-ad06332fa20b
 - **🔀 Centralized Dynamic Routing:** Organized screen navigation managed through `onGenerateRoute`.
 - **🛠️ Custom Dart Extensions:** Handcrafted BuildContext extensions for concise navigation and theme/localization access.
 - **💾 Local Persistence:** Saving user theme preferences locally using `SharedPreferences`.
+- **💾 dependency injection getit.
 
 ---
 
